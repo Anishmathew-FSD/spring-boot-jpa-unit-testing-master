@@ -23,7 +23,8 @@ public class MovieController {
 	
 	@Autowired
 	private MovieService movieService;
-	
+
+	// createing movie
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
 	public Movie create(@RequestBody Movie movie) {
